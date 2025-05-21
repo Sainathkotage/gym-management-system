@@ -1,0 +1,40 @@
+<!-- /admin/admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#">Add Member</a></li>
+      <li><a href="#">Create Bill</a></li>
+      <li><a href="#">Send Notification</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Add New Member</h2>
+    <form id="addMemberForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <select id="feePackage" required>
+        <option value="">Select Fee Package</option>
+        <option value="Monthly - ₹1000">Monthly - ₹1000</option>
+        <option value="Quarterly - ₹2700">Quarterly - ₹2700</option>
+        <option value="Yearly - ₹10000">Yearly - ₹10000</option>
+      </select>
+      <button type="submit">Add Member</button>
+    </form>
+  </section>
+
+  <script type="module" src="../js/admin.js"></script>
+</body>
+</html>

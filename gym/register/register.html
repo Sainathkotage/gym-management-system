@@ -1,0 +1,30 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Gym System</title>
+<link rel="stylesheet" href="/css/style.css"></head>
+<body>
+
+  <div class="container">
+    <h1>Create Account</h1>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="admin">Admin</option>
+        <option value="member">Member</option>
+        <option value="user">User</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+
+    <p class="register-link">Already have an account? <a href="/register/index.html">Login</a></p>
+  </div>
+
+  <script type="module" src="/js/register.js"></script>
+</body>
+</html>
