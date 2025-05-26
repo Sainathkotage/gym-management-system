@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gym Subscription Plans</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
+  <script src="/firebase/firebase-config.js"></script>
+  <link rel="stylesheet" href="/Subscription/test.css" />
+</head>
+<body>
+
+  <h1>Choose Your Gym Subscription Plan</h1>
+  <p class="subtitle">
+    Unlock access to professional training, fitness tracking, and personalized coaching. Pick a plan that fits your goals.
+  </p>
+
+  <div class="pricing">
+    <div class="card">
+      <h2 class="title"><img src="/Subscription/1-MONTH-5-25-2025.png" alt="1month"></h2>
+      <p class="description">
+        Perfect for short-term goals. Includes full access + 1 trainer session.
+      </p>
+      <h3 class="price">₹999</h3>
+      <button class="btn" onclick="subscribePlan(49900, '1 Month')">Subscribe Now</button>
+    </div>
+
+    <div class="card">
+      <h2 class="title"><img src="/Subscription/3-MONTH-5-25-2025.png" alt="3month"></h2>
+      <p class="description">
+        Best value. Includes diet plans, trainer support & more.
+      </p>
+      <h3 class="price">₹2899</h3>
+      <button class="btn" onclick="subscribePlan(129900, '3 Month')">Subscribe Now</button>
+    </div>
+    <div class="back">
+        <h2>
+            <a href="/users/metallic.html">Home </a>
+        </h2>
+    </div>
+  </div>
+
+  <script src="/Subscription/sub.js"></script>
+</body>
+</html>

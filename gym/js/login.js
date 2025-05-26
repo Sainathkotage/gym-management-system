@@ -38,9 +38,9 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
       if (role === "admin") {
         window.location.href = "/admin/admin-dashboard.html";
       } else if (role === "member") {
-        window.location.href = "/members/member-panel.html";
+        window.location.href = "/member/member.html";
       } else if (role === "user") {
-        window.location.href = "/users/user-panel copy.html";
+        window.location.href = "/users/metallic.html";
       } else {
         alert("Unknown role.");
       }

@@ -1,0 +1,60 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Gym System</title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
+<link rel="stylesheet" href="/css/style.css"></head>
+<body>
+
+  <div class="container">
+    <h1>Create Account</h1>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="user">Member</option>
+      </select>
+      <button id="payButton">Pay Now</button>
+    </form>
+  </div>
+  
+<script src="/firebase/firebase-config.js"></script>
+ <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  document.getElementById("payButton").onclick = function () {
+    const options = {
+      key: "rzp_test_q52QNVvtC9T2Nr", // your Razorpay test key
+      amount: 0.1, // 500.00 INR
+      currency: "INR",
+      name: "Gym Membership",
+      description: "Monthly Access",
+      handler: function (response) {
+        alert("Payment successful!");
+        console.log(response);
+      },
+      prefill: {
+        name: "Test User",
+        email: "test@example.com"
+      },
+      theme: {
+        color: "#3399cc"
+      }
+    };
+
+    const rzp = new Razorpay(options);
+    rzp.open();
+  };
+</script>
+
+
+
+<script src="/js/register.js"></script>
+
+</body>
+</html>

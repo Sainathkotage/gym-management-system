@@ -1,0 +1,91 @@
+
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  color: #111827;
+}
+
+p.subtitle {
+  max-width: 600px;
+  margin: 10px auto 40px;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  background: linear-gradient(45deg, black, green);
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 300px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.title img {
+  width: 50%;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.description {
+  font-size: 1rem;
+  color: #c7daf5;
+  margin-bottom: 20px;
+  min-height: 80px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d4d4d4e6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: linear-gradient(rgb(2, 137, 0),rgb(0, 0, 0));
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #429a2c;
+  transition: .5s;
+}
+
+.back h2 a{
+    display: inline-flex;
+    position: relative;
+    top: -15rem;
+    right: -20rem;
+    color: black;
+    text-decoration: none;
+}

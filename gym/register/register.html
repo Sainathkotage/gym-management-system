@@ -15,8 +15,6 @@
       <input type="password" id="password" placeholder="Password" required />
       <select id="role" required>
         <option value="">Select Role</option>
-        <option value="admin">Admin</option>
-        <option value="member">Member</option>
         <option value="user">User</option>
       </select>
       <button type="submit">Register</button>
@@ -24,6 +22,10 @@
 
     <p class="register-link">Already have an account? <a href="/register/index.html">Login</a></p>
   </div>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <script src="/js/pay.js"></script>
+
 
   <script type="module" src="/js/register.js"></script>
 </body>

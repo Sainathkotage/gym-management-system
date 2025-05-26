@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gym Payment & Subscription</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gym Membership Payment</h1>
+
+    <form id="payment-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="plan">Subscription Plan</label>
+      <select id="plan">
+        <option value="monthly">Monthly - ₹500</option>
+        <option value="quarterly">Quarterly - ₹1350</option>
+        <option value="yearly">Yearly - ₹4800</option>
+      </select>
+
+      <button type="submit">Pay Now</button>
+    </form>
+
+    <div id="receipt" class="hidden">
+      <h2>Payment Receipt</h2>
+      <p id="receipt-details"></p>
+      <button onclick="downloadReceipt()">Download Receipt</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

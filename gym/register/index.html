@@ -19,6 +19,22 @@
 
     <p class="register-link">Don't have an account? <a href="/register/register.html">Register here</a></p>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
+
+<script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCx-cYO8T8HTYoUp_dgMMu_f5MPQ_pPaPY",
+  authDomain: "gym-management-system-93b41.firebaseapp.com",
+  projectId: "gym-management-system-93b41",
+  storageBucket: "gym-management-system-93b41.appspot.com",
+  messagingSenderId: "867992243172",
+  appId: "1:867992243172:web:9eec66c8f18ac5e5bb6175"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
 
   <script type="module" src="/js/login.js"></script>
 
